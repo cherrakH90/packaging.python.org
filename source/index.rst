@@ -1,3 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherrak Infinity ♾️ | المنصة العالمية المتطورة</title>
+  <meta name="description" content="Cherrak Infinity ♾️ المنصة الذكية العالمية المعتمدة على الذكاء الاصطناعي.">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712108.png">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{
+      background: radial-gradient(circle at top,#0b1220,#000);
+      color:#fff;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      text-align:center;
+      overflow:hidden;
+    }
+    h1{font-size:2.5rem;margin-bottom:10px;color:#00f0ff}
+    p{font-size:1.1rem;margin-bottom:20px;color:#b6c2ff}
+    .btn{
+      background:linear-gradient(90deg,#00f0ff,#0044ff);
+      padding:10px 20px;
+      border:none;
+      border-radius:8px;
+      color:#fff;
+      cursor:pointer;
+      transition:0.3s;
+    }
+    .btn:hover{opacity:0.8;transform:scale(1.05)}
+    .lang{
+      position:fixed;
+      top:10px;
+      right:10px;
+      background:#111;
+      border-radius:20px;
+      padding:5px 10px;
+      font-size:14px;
+    }
+    .stars{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:url('https://i.ibb.co/mGzxK3Q/stars-bg.gif') center/cover;
+      z-index:-1;
+      opacity:0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="lang">
+    🌍 <button class="btn" id="langToggle">English</button>
+  </div>
+
+  <h1>بسم الله الرحمن الرحيم</h1>
+  <h2>Cherrak Infinity ♾️</h2>
+  <p>المنصة العالمية المتطورة — نظام يعتمد على الذكاء الاصطناعي والأقمار الصناعية الذكية 🛰️</p>
+
+  <p id="stats">12,858 مستخدم متصل — $126,819.178 أرباح المستخدمين — سرعة الشبكة 3.3G</p>
+
+  <button class="btn" onclick="window.location.href='https://github.com/cherrakH90'">زيارة GitHub</button>
+
+  <footer style="margin-top:30px;font-size:0.9rem;opacity:0.8;">
+    © 2025 Cherrak Infinity ♾️ — جميع الحقوق محفوظة
+  </footer>
+
+  <script>
+    const langBtn = document.getElementById('langToggle');
+    let arabic = true;
+    langBtn.onclick = () => {
+      if(arabic){
+        document.documentElement.lang = 'en';
+        document.documentElement.dir = 'ltr';
+        document.querySelector('h1').textContent = 'In the name of Allah, the Most Merciful, the Most Compassionate';
+        document.querySelector('h2').textContent = 'Cherrak Infinity ♾️';
+        document.querySelector('p').textContent = 'The global advanced platform powered by Artificial Intelligence and Smart Satellites 🛰️';
+        document.getElementById('stats').textContent = '12,858 connected users — $126,819.178 user earnings — 3.3G network speed';
+        langBtn.textContent = 'العربية';
+        arabic = false;
+      } else {
+        document.documentElement.lang = 'ar';
+        document.documentElement.dir = 'rtl';
+        document.querySelector('h1').textContent = 'بسم الله الرحمن الرحيم';
+        document.querySelector('h2').textContent = 'Cherrak Infinity ♾️';
+        document.querySelector('p').textContent = 'المنصة العالمية المتطورة — نظام يعتمد على الذكاء الاصطناعي والأقمار الصناعية الذكية 🛰️';
+        document.getElementById('stats').textContent = '12,858 مستخدم متصل — $126,819.178 أرباح المستخدمين — سرعة الشبكة 3.3G';
+        langBtn.textContent = 'English';
+        arabic = true;
+      }
+    };
+  </script>
+</body>
+</html>
+
 ===========================
 Python Packaging User Guide
 ===========================
